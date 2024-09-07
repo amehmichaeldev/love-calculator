@@ -36,7 +36,10 @@ form {
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: deeppink;
+    text-shadow: 5px 10px 10px red;
+    text-transform: uppercase;
 }
 
 label {
@@ -54,7 +57,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: red;
+    background-color: deeppink;
     color: white;
     border: none;
     border-radius: 10px 35px;
@@ -62,8 +65,38 @@ button {
 }
 
 button:hover {
-    background-color: green;
+    background-color: red;
 }
+
+.ch{
+  
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,deeppink);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 10s linear infinite;
+    }
+    
+    @keyframes animate 
+    {
+        0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    
+    {
+        color: deeppink;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+    color: snow;
+    box-shadow: 0 0 10px #fff,
+    0 0 20px  #fff,
+    0 0 40px  #fff,
+    0 0 80px  #fff,
+    0 0 160px  #fff;
+    }
+    }
 
 #result {
     margin-top: 20px;
